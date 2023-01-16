@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    Center(
+    const Center(
       //centering
       child: Text(
         "Now, say my name!",
         textDirection: TextDirection.ltr, //text direction - left
-        style: const TextStyle(
+        style: TextStyle(
             //text style
             fontWeight: FontWeight.bold,
             color: Colors.red,
