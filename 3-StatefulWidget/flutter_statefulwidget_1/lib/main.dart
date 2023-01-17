@@ -5,7 +5,14 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyFirstApp());
 
 // ignore: use_key_in_widget_constructors
-class MyFirstApp extends StatelessWidget {
+class MyFirstApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyFirstAppState();
+  }
+}
+
+class _MyFirstAppState extends State<MyFirstApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
