@@ -2,16 +2,20 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const Center(
-      //centering
-      child: Text(
-        "Now, say my name!",
-        textDirection: TextDirection.ltr, //text direction - left
-        style: TextStyle(
-            //text style
-            fontWeight: FontWeight.bold,
-            color: Colors.red,
-            fontSize: 35.0), //bold text, color of text, font size
+    MaterialApp(
+      //Cupertion for iOS
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+        appBar: AppBar(
+          title: const Text("This is title."),
+          centerTitle: true,
+        ),
+        body: const Center(
+            child: Text("This is body.",
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white))),
       ),
     ),
   );
