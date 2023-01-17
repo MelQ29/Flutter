@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'Lobster'),
       home: Scaffold(
         appBar: AppBar(
           title: Text('Adding Assets'),
@@ -19,6 +20,16 @@ class MyApp extends StatelessWidget {
           children: <Widget>[
             Image(image: AssetImage('assets/images/backgImage.jpg')),
             Image.asset('assets/icons/appico.ico'),
+            Positioned(
+              top: 16,
+              left: 45,
+              child: Text("JoJo's Bizarre Adventure",
+                  style: TextStyle(
+                    fontSize: 30,
+                    color: Colors.pink,
+                    /* fontFamily: 'Lobster' */
+                  )),
+            )
           ],
         )),
       ),
