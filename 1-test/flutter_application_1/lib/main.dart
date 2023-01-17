@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
-      //Cupertion for iOS
       home: Scaffold(
         backgroundColor: Colors.grey,
         appBar: AppBar(
